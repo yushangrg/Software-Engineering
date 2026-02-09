@@ -12,7 +12,7 @@ const db = require('./services/db');
 
 // Create a route for root - /
 app.get("/", function(req, res) {
-    res.send("Hello world!");
+    res.send("Game Tips and Tricks - Community Platform");
 });
 
 // Create a route for testing the db
@@ -27,8 +27,8 @@ app.get("/db_test", function(req, res) {
 
 // Create a route for /goodbye
 // Responds to a 'GET' request
-app.get("/goodbye", function(req, res) {
-    res.send("Goodbye world!");
+app.get("/tips", function(req, res) {
+    res.send("Browse and share game tips and tricks");
 });
 
 // Create a dynamic route for /hello/<name>, where name is any value provided by user
@@ -44,5 +44,5 @@ app.get("/hello/:name", function(req, res) {
 
 // Start server on port 3000
 app.listen(3000,function(){
-    console.log(`Server running at http://127.0.0.1:3000/`);
+    console.log(`Game Tips and Tricks running at http://127.0.0.1:3000/`);
 });
